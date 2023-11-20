@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="author" content="Matias Escobar">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap');
+        
+        
+        :root {
+            --small: 1rem;
+            --medium: 1.5rem;
+            --large: 2rem;
+            --font-size: 16px;
+        }
+        
+        ul li {
+        display: inline;
+        margin-right: 1rem;
+        }
+         
+        ul > li {
+        background-color: #ddd;
+        padding: 0.5rem;
+        }
+
+        body {
+            font-family: 'PT Serif', serif;
+            font-size: var(--medium);
+            color: #333;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-image: linear-gradient(
+                 to bottom right, 
+            #00b7d4,
+            #5054b8,
+            #2f3fb0,
+            #161569, 
+            #5A4894,
+            #a958a1,
+            #ff7cae);
+            background-size: 200% 200%;
+        
+            animation: movimiento 5s linear infinite alternate;
+        }
+         
+        .container {
+            display: grid;
+            grid-template-areas: 
+                "header header header"
+                "sidebar content content"
+                "footer footer footer";
+            grid-gap: 10px;
+            padding: 10px;
+        }
+
+        .header, .sidebar, .content, .footer {
+            padding: 20px;
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+        }
+
+        .content {
+            grid-area: content;
+        }
+
+        .footer {
+            grid-area: footer;
+        }
+
+        .box:hover, .box:target, .box:focus {
+            box-shadow: 0 0 0 3px #007bff;
+            transition: box-shadow 0.5s;
+        }
+
+        .box {
+            background-color: #e9ecef;
+            padding: 20px;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-areas: 
+                    "header header header"
+                    "sidebar sidebar sidebar"
+                    "content content content"
+                    "footer footer footer";
+            }
+        }
+    </style>
+    <title>Info antes del juego</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header"> Juego Maton😈</div>
+            <div class="sidebar">
+                <a href="#section1" class="box">INFO 1</a>
+                <a href="#section2" class="box">INFO HTML</a>
+            </div>
+            <div class="content">
+                <div id="section1" class="box">
+                    <h2>INFO DEL JUEGO</h2>
+                    <p> juego sencillo con jugabilidad facil, presionar la tecla C para
+                        poder jugar con las flechas laterales poder moverse y con la tecla M silenciar el juego.</p>
+                </div>
+                <div id="section2" class="box">
+                    <h2>INFO DE HTML </h2>
+                    <p>Ayudandome con un tutorial en el Youtube, en el juego utilice Javascript algo complicado
+                        de usar pero una vez se entiende se vuelve un poco mas facil, saque la idea de un video que vi y me inspire 
+                        a crear un juego copiando algunas cosas del codigo pero cambie el formato del juego.
+                    </p>
+                    <ul>
+                        <li> Un juego muy entretendio </li>
+                    </ul>
+            </div>
+        </div>
+        <div class="footer">A continuacion El juego maton <a href="auto.html">  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-car-front-fill" viewBox="0 0 16 16">
+            <path d="M2.52 3.515A2.5 2.5 0 0 1 4.82 2h6.362c1 0 1.904.596 2.298 1.515l.792 1.848c.075.175.21.319.38.404.5.25.855.715.965 1.262l.335 1.679c.033.161.049.325.049.49v.413c0 .814-.39 1.543-1 1.997V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.338c-1.292.048-2.745.088-4 .088s-2.708-.04-4-.088V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.892c-.61-.454-1-1.183-1-1.997v-.413a2.5 2.5 0 0 1 .049-.49l.335-1.68c.11-.546.465-1.012.964-1.261a.807.807 0 0 0 .381-.404l.792-1.848ZM3 10a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm10 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2ZM6 8a1 1 0 0 0 0 2h4a1 1 0 1 0 0-2H6ZM2.906 5.189a.51.51 0 0 0 .497.731c.91-.073 3.35-.17 4.597-.17 1.247 0 3.688.097 4.597.17a.51.51 0 0 0 .497-.731l-.956-1.913A.5.5 0 0 0 11.691 3H4.309a.5.5 0 0 0-.447.276L2.906 5.19Z"/>
+          </svg> </a></div>
+    </div>
+   
+</body>
+</html>

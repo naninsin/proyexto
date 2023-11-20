@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar </title>
+    <meta name="author" content="Bastian">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
+</head>
+<body onclick="PLayAudio()">
+    <h1><i>Duck Hunt </i></h1>
+
+    <div class="Play">
+        <div class="grid">
+            <a href="dog-hunt.html"><button class="boton">Play</button></a>
+        </div>
+    </div>
+
+    <audio id="audio" autoplay controls loop>
+        <source src="audio/musica.mp3" type="audio/mpeg">
+        Este navegador no acepta formatos de audio
+    </audio>
+    <script>
+        function PLayAudio() {
+          document.getElementById("audio").play();
+        }
+      </script>
+    <img src="img/QR.png" alt="">
+</body>
+</html>
