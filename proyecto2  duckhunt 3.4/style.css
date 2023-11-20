@@ -180,25 +180,14 @@ h1 {
 
 
 
-@media (max-width: 768px) {
-    .Play {
-        display: flex;
-        flex-direction: column;
+@media (max-width: 768px)  { 
+    .container { 
+                grid-template-areas:
+                    "header header header"
+                    "sidebar sidebar sidebar"
+                    "content content content"
+                    "footer footer footer"; 
     }
-}
-
-@media(max-width: 768px) {
-    h1 {
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-@media (max-width: 768px) {
-    body { 
-        display: flex;
-        flex-direction: column;
-     }
 }
 
 
