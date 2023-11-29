@@ -153,7 +153,7 @@ h2 {
     gap: 50px;
 }
 
-.product-1 {
+.product-1, .product-2, .product-3, .product-4 {
     background-color: #2A223A;
 }
 
