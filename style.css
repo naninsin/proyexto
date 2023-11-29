@@ -340,7 +340,7 @@ input {
     }
 }
 @media on
-ly screen and (max-width: 500px) {
+ly screen and (max-width: 768px) {
   .product-2 { grid-area: 1 / span 3 / 2 / 4; }
   .product-3 { grid-area: 2 / 1 / 3 / 2; }
   .product-4 { grid-area: 2 / 3 / 3 / 4; }
