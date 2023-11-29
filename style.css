@@ -312,7 +312,7 @@ input {
         gap: 30px;
     }
 
-    .product-1 img {
+    .product-1, .product-2, .product-3, .product-4 img {
         width: 100%;
     }
 
